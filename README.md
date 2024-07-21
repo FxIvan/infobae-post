@@ -21,9 +21,8 @@ Este proyecto cumple con los requisitos que son los siguientes:
    ![alt text](image-3.png)
 
 4. Vista protegida por Google SingIn.
-` Si se ignoramos el modal y apretamos el post, no nos redirigue a ninguna lugar ya que esta protegida. El modal es solo de aviso`
-![alt text](image-4.png)
-
+   ` Si ignoramos el modal y apretamos el post, no nos redirigue a ninguna lugar ya que esta protegida. El modal es solo de aviso`
+   ![alt text](image-4.png)
 
 ### Problemas que me encontre durante el proyecto
 
@@ -32,4 +31,20 @@ Solucion: Tuve que agarrar la "app-id" que usan ellos en su web.
 ![alt text](image-5.png)
 
 GitHub Pages no me permite hacer deploy, asi que tuve que armar una imagen con docker y subirlo en mi servidor ubuntu con nginx. La web es el siguiente link:
-`https://argcoupon.xyz/` 
+`https://argcoupon.xyz/`
+
+### Steps to deploy to docker hub
+
+1. docker image build -t almendraivan/infobae-post-almendra:tag .
+2. docker push almendraivan/infobae-post-almendra:tag
+
+3. docker run -dp 3000:3000 --name frontend-infobae almendraivan/infobae-post-almendra:v1
+
+### Iniciar Localmente
+
+1. npm install
+2. npm start
+
+Version de node v20.10.0
+
+No hay .env (Pero deberia)
