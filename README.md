@@ -47,4 +47,8 @@ GitHub Pages no me permite hacer deploy, asi que tuve que armar una imagen con d
 
 Version de node v20.10.0
 
+### Diseño en figma con la cual inicie
+
+Despues fui cambiando ya que no tuve mas tiempo y fui improvisando
+![alt text](image-6.png)
 No hay .env (Pero deberia)
